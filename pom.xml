@@ -34,7 +34,7 @@
 			<id>nexus</id>
 			<name>webgroup</name>
 			<url>http://54.236.43.72:9090/suresh/repository/web-group/</url>
-		<repository>
+		</repository>
 	</repositories>
 	
 	<dependencies>
