@@ -1,7 +1,7 @@
 node{
     
 def mavenHome = tool name: "maven3.9.4"
-${env.TAG_TIMESTAMP}
+//${env.TAG_TIMESTAMP}
     
 stage("git scm checkout"){
   git credentialsId: '725c84a1-bc49-4c70-887f-22c235b0b2e0', url: 'https://github.com/sureshkrishna1904/maven-web-application.git'
