@@ -8,7 +8,7 @@ timestamps {
 stage("git scm checkout"){
   git credentialsId: '725c84a1-bc49-4c70-887f-22c235b0b2e0', url: 'https://github.com/sureshkrishna1904/maven-web-application.git'
 }
-}
+
 //build code
 stage("build code"){
 sh "$mavenHome/bin/mvn package"
@@ -31,4 +31,5 @@ sh "scp -o StrictHostKeyChecking=no target/*.war ubuntu@44.212.70.38:/opt/tomcat
 }
 }
 
+}
 }
